@@ -1,6 +1,19 @@
 <template>
   <div id="app" class="container">
     <h1>{{name}}</h1>
+    <ul>
+      <li v-for="recipe in recipes" :key="recipe.name">
+        <ul>
+          <li v-for="ingredient in recipe.ingredients" :key="ingredient">
+            {{ingredient}}
+          </li>
+
+          <li v-for="step in recipe.steps" :key="step">
+            {{step}}
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </template>
 
