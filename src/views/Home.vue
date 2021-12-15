@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="container">
-    {{recipes}}
+    {{name}}
   </div>
 </template>
 
@@ -13,6 +13,36 @@ export default {
   data() {
     return {
      name:'recipes',
+     recipes: [
+       {
+         'name': 'Mjúk piparkaka',
+         'ingredients': [
+          '200 gr Naturli smjörlíki við stofuhita',
+          '2 dl sykur',
+          '6 dl hveiti',
+          '2 tsk lyftiduft',
+          '1,5 tsk matarsódi', 
+          '1 msk kanill',
+          '2 tsk engiferkrydd',
+          '2 tsk negull',
+          'Örlítið salt',
+          '6 dl vegan mjólk',
+          '2 tsk vanilludropar',
+          '1 msk eplaedik',
+          '2 msk týtuberjasulta'
+         ],
+         'steps': [
+           'Hitið ofninn í 175°C. Minn er ekki með blæstri svo ég set á undir og yfir hita.',
+           'Þeytið smjörlíkið og sykurinn í stórri skál þar til það verður létt og svolítið ljóst.',
+           'Sigtið út í skálina hveiti, lyftiduft, matarsóda, salt og kryddin.',
+           'Hellið útí mjólk, vanilludropum og eplaediki og hrærið þar til deigið er laust við kekki.',
+           'Bætið sultunni útí og blandið varlega saman við deigið.',
+           'Smyrjið tvö smelluform og skiptið deiginu í þau.',
+           'Bakið í 40-60 mínútur. Það fer svolítið eftir ofninum hversu lengi kakan er að bakast en ég byrja að fylgast með henni eftir sirka hálftíma.',
+           'Látið botnana kólna áður en þið setjið kremið á.'
+         ]
+       }
+     ]
     };
   },
   methods: {
