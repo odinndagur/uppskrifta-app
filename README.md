@@ -1,4 +1,4 @@
-# straeto
+# Uppskriftir
 
 ## Project setup
 ```
